@@ -6,8 +6,6 @@ import 'package:loading/loading.dart';
 import './result_page.dart';
 import 'dart:convert';
 
-const a = 'http://openweathermap.org/img/wn/10d@2x.png';
-
 class LoadingPage extends StatefulWidget {
   final String city;
   LoadingPage(this.city);
@@ -17,7 +15,7 @@ class LoadingPage extends StatefulWidget {
 
 class _LoadingPageState extends State<LoadingPage> {
   String url =
-      'https://api.openweathermap.org/data/2.5/weather?appid=d14b8a19cf13b254db1c2840f7555fd1&units=metric&';
+      'http://api.openweathermap.org/data/2.5/weather?appid=d14b8a19cf13b254db1c2840f7555fd1&units=metric&';
   @override
   void initState() {
     super.initState();
